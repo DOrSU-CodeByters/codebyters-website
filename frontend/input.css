@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Barlow', sans-serif;
+}
+
+.hero {
+    height: 100vh;
+    background-image: url("../img/hero-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.border-between::before{
+    content: ' ';
+    padding: 5px 0;
+    border-right: 1px solid white;
+}
+
+.border-horizontal::before{
+    content: ' ';
+    padding: 1px 0;
+    border-bottom: 1px solid white;
+}
